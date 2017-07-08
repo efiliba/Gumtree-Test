@@ -1,0 +1,34 @@
+.widget-footer-container {
+  color: #478200;
+
+  .prev-container {
+    float: left;
+    padding-left: 1rem;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .next-container {
+    float: right;
+    padding-right: 1rem;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .icon {
+    font-size: 3rem;
+    vertical-align: middle;
+  }
+
+  .text {
+    text-decoration: underline;
+  }
+
+  .prev-container .text {
+    padding-left: 0.8rem;
+  }
+
+  .next-container .text {
+    padding-right: 0.8rem;
+  }
+}

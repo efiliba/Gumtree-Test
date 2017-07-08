@@ -1,0 +1,9 @@
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+.content-box-widget-container {
+  @include box-shadow(2px 2px 6px 0px grey);
+}

@@ -1,0 +1,36 @@
+@mixin linear-gradient($start, $end) {
+  background: $start;                                       /* Non supported browsers */
+  background: -webkit-linear-gradient(left, $start , $end); /* Safari < 6.0 */
+  background: -o-linear-gradient(right, $start, $end);      /* Opera < 12.0 */
+  background: -moz-linear-gradient(right, $start, $end);    /* Firefox < 15 */
+  background: linear-gradient(to right, $start , $end);     /* Standard browsers */
+}
+
+.widget-header-container {
+  margin: initial;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.2rem;
+  text-align: left;
+  @include linear-gradient(#ECEAD3 , #C8C8A5);
+
+  i {
+    color: #478200;
+    vertical-align: middle;
+  }
+
+  .title-icon {
+    font-size: x-large;
+  }
+
+  .title {
+    padding-left: 0.8rem;
+    font-weight: bold;
+  }
+
+  .collapse-icon {
+    padding-top: 0.5rem;
+    float: right;
+    cursor: pointer;
+    cursor: hand;
+  }
+}
